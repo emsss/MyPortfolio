@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans+Condensed:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(134, 134, 134);
+}
+
+/* ----- Style for HEADER */
+header{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: #0B212F; */
+    display:inline;
+    align-items: center;
+    padding: 30px 10%;
+    color:#A2B4C3;
+    position: absolute;
+    width: 100%;
+}
+.header-title{
+   font-weight: bolder;
+   letter-spacing: 3px;
+   font-size: 18px;
+}
+.navbar{
+    /* border:1px solid white; */
+    width: 100%;
+}
+.nav-right{
+    position: absolute;
+    right: 0;
+}
+.nav-item{
+    margin-left: 20px;
+}
+.nav-link{
+    color:#A2B4C3;
+    transition: all 0.3s ease 0s;
+}
+.nav-link:hover{
+    color: #1a64a0;
+}
+
+/* ----- Style for HOME Page */
+
+.home{
+    width: 100%;
+    /* height: 700px; */
+    color:#DBDBDB;
+    background-color: #010812;
+    display: block;
+}
+.content{
+    display: inline-block;
+    color:#D9EBE9;
+    font-size: 32px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 100;
+    letter-spacing: 10px;
+    width: 100%;
+}
+.content h1{
+    text-align: center;
+    position: relative;
+    top: 250px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+
+/* ----- Styles for ABOUT Page */
+.about{
+    background-color: white;
+    color:#0B212F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    height: 700px;
+}
+.about img{
+    width: 400px;
+    height: 100%;
+}
+
+.column{
+    width: 40%;
+    margin:50px;
+}
+.name{
+    color:#000000;
+    font-weight: bold;
+}
+.web{
+    color:#c40808;
+    font-weight: bold;
+}
+a.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    color: white;
+    border-style: none;
+    transition: .3s ease 0s;
+}
+.download:hover{
+    color: black;
+    background-color: #dddddd;
+}
+.line{
+    margin: 20px auto;
+    border-bottom: 3px solid rgb(134, 134, 134);
+    width: 200px;
+    display: block;
+}
+/* -----SKILLSETS */
+.skills{
+    display: inline-block;
+    width:100%;
+    background-color: rgb(134, 134, 134);
+    color:#0B212F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+.skills h2{
+    text-align: center;
+    margin: 50px 0px;
+    letter-spacing: .2em;
+}
+.carousel-inner{
+    margin-bottom: 100px;
+}
+.carousel-item{
+    height: 350px;
+}
+.carousel-caption{
+    color: black;
+}
+.carousel-image{
+    margin-top: 30px 0 10px 0;
+    align-items: center;
+}
+
+/* -----CONTACT */
+.contact{
+    background-color: #272c35;
+    color: white;
+    width: 100%;
+    /* height: 250px; */
+    display: inline-block;
+    /* border: 1px solid white; */
+    padding: 25px;
+}
+.first-column, .sec-column{
+    /* border: 1px solid white; */
+    padding: 20px ;
+}
+.first-column, .sec-column h3{
+    margin-bottom: 10px;
+} 
+.first-column span{
+    color: rgb(200, 200, 200);
+}
+.btn{
+    background-color: rgb(134, 134, 134);
+    border: none;
+    border-radius: 50%;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    margin-right: 15px;
+    color: white;
+}
+.btn:hover{
+    background-color: RoyalBlue;
+    color: white;
+}
+
+
+a.email{
+    text-decoration: none;
+    color:#D9EBE9;
+}
+
+/* -----FOOTER */
+footer{
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+}
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    color: #e6e6e6;
+    width: 100%;
+    padding-top: 10px;
+    /* border: 1px solid white; */
+}
+.copyright .nav{
+    justify-content: center;
+}
+.copyright .nav ul li{
+    margin-left: 0;
+}
+
+/* -------------- SCROLL BACK -------------- */
+.btn-scroll{
+    display: none;
+   position: fixed;
+   right: 30px;
+   bottom: 20px;
+   background-color: #00001f;
+   color: white;
+   padding: 12px 20px;
+   border-radius: 50%;
+   z-index: 1;
+   text-decoration: none;
+   transition: all .5s ease 0s;
+}
+.btn-scroll:hover{
+    background-color: RoyalBlue;
+    color: white;
+}
