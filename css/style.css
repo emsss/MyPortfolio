@@ -10,12 +10,12 @@ body{
     background-color: rgb(134, 134, 134);
 }
 
+
 /* ----- Style for HEADER */
 header{
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    /* background-color: #0B212F; */
     display:inline;
     align-items: center;
     padding: 30px 10%;
@@ -29,7 +29,6 @@ header{
    font-size: 18px;
 }
 .navbar{
-    /* border:1px solid white; */
     width: 100%;
 }
 .nav-right{
@@ -47,11 +46,36 @@ header{
     color: #1a64a0;
 }
 
-/* ----- Style for HOME Page */
+/* HEADER --- MEDIA QUERY at 320px */
+@media only screen and (max-width:320px){
+    .header{
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+    .header-title{
+        font-weight: bolder;
+        letter-spacing: 3px;
+        font-size: 12px;
+     }
+     .navbar-nav{
+         font-size: 12px;
+         width: 100%;
+         text-align: center;
+         background-color: #010812;
+         opacity: .85;
+         color:white;
+         z-index: 1;
+     }
+     .collapse, .navbar-collapse{
+         width: 100%;
+         position: relative;
+     }
+}
 
+/* ----- Style for HOME Page */
 .home{
     width: 100%;
-    /* height: 700px; */
+    height: 700px;
     color:#DBDBDB;
     background-color: #010812;
     display: block;
@@ -69,10 +93,20 @@ header{
     text-align: center;
     position: relative;
     top: 250px;
-    /* border: 1px solid red; */
     width: 100%;
 }
-
+/* HOME --- MEDIA QUERY at 320px */
+@media only screen and (max-width:320px){
+    .home{
+        height: 300px;
+    }
+    .content h1{
+       font-size: 16px;
+       top:175px;
+       letter-spacing: 5px;
+       position: relative;
+    }
+}
 
 /* ----- Styles for ABOUT Page */
 .about{
@@ -105,7 +139,6 @@ a.download{
     background-color: black;
     color: white;
     padding: 15px 40px;
-    color: white;
     border-style: none;
     transition: .3s ease 0s;
 }
@@ -119,6 +152,39 @@ a.download{
     width: 200px;
     display: block;
 }
+/* MEDIA QUERY at 360px */
+@media only screen and (max-width:320px){
+    .about img{
+        width: 200px;
+        padding:0;
+    }
+    .column{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .column h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .column p{
+        font-size: 12px;
+    }
+    a.download{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 10px 89px;
+        border-style: none;
+        transition: .3s ease 0s;
+    }
+    .download:hover{
+        color: black;
+        background-color: #dddddd;
+    }
+}
+
+
+
 /* -----SKILLSETS */
 .skills{
     display: inline-block;
@@ -143,9 +209,26 @@ a.download{
 .carousel-caption{
     color: black;
 }
-.carousel-image{
-    margin-top: 30px 0 10px 0;
-    align-items: center;
+/* SKILLS --- MEDIA QUERY at 320px */
+@media only screen and (max-width:320px){
+    .skills h2{
+        font-size:24px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .carousel-image{
+        width: 175px;
+        height: auto;
+    }
+    .carousel-inner{
+        margin: 15px auto;
+    }
+    .carousel-item{
+        height: auto;
+        margin-bottom: 50px;
+        transition: all .5s ease 0s;
+    }
 }
 
 /* -----CONTACT */
@@ -184,12 +267,36 @@ a.download{
     background-color: RoyalBlue;
     color: white;
 }
-
-
 a.email{
     text-decoration: none;
     color:#D9EBE9;
 }
+/* CONTACT --- MEDIA QUERY at 320px */
+@media only screen and (max-width:320px){
+    .col-sm{
+        /* border: 1px solid red; */
+        padding: 0;
+    }
+    .first-column, .sec-column{
+        /* border: 1px solid white; */
+        margin:0;
+        padding: 0;
+    } 
+    .first-column h3, .sec-column h3{
+        text-align: center;
+        font-size: 20px;
+    } 
+    .first-column p{
+        text-align: left;
+        font-size: 12px;
+    } 
+    .sec-column a{
+        justify-content: center;
+        font-size: 12px;
+        margin-left:20px;
+    } 
+}
+
 
 /* -----FOOTER */
 footer{
@@ -210,6 +317,29 @@ footer{
 }
 .copyright .nav ul li{
     margin-left: 0;
+}
+
+/* FOOTER --- MEDIA QUERY at 320px */
+@media only screen and (max-width:320px){
+    .copyright .nav{
+        background-color: rgb(30, 30, 30);
+        color:white;
+        font-size: 12px;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: inline;
+    }
+    /* .navbar-expand-lg .navbar-nav{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    } */
+    .collapse, .navbar-collapse{
+        width: 100%;
+        position: relative;
+        outline: none;
+    }
 }
 
 /* -------------- SCROLL BACK -------------- */
