@@ -230,6 +230,13 @@ a.download{
         background-color: #dddddd;
     }
 }
+@media only screen and (max-width:425px) and (min-width:321px){
+    .column{
+        width: 100%;
+        margin: 10px auto;
+        /* margin-bottom: 0; */
+    }
+}
 @media only screen and (max-width:768px) and (min-width:321px){
     .about{
         height: auto;
@@ -240,7 +247,7 @@ a.download{
     }
     .column{
         width: 100%;
-        margin: 30px auto;
+        margin: 10px auto;
         /* margin-bottom: 0; */
     }
     .column h2{
