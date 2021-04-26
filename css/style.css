@@ -75,7 +75,12 @@ header{
      }
 }
 @media only screen and (max-width:991px) and (min-width:321px){
-    .navbar-nav{
+    .header-title{
+        font-weight: bolder;
+        letter-spacing: 3px;
+        font-size: 12px;
+     }
+    header .navbar-nav{
         font-size: 12px;
         width: 100%;
         text-align: center;
@@ -142,6 +147,9 @@ header{
 @media only screen and (max-width:768px) and (min-width:321px){
     .home{
         height:575px;
+    }
+    .content h1{
+        font-size: 20px;
     }
 }
 
@@ -334,7 +342,26 @@ a.download{
         transition: all .5s ease 0s;
     }
 }
-
+@media only screen and (max-width:720px) and (min-width:321px){
+    .skills h2{
+        font-size:24px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .carousel-image{
+        width: 175px;
+        height: auto;
+    }
+    .carousel-inner{
+        margin: 15px auto;
+    }
+    .carousel-item{
+        height: auto;
+        margin-bottom: 50px;
+        transition: all .5s ease 0s;
+    }
+}
 /* -----CONTACT */
 .contact{
     background-color: #272c35;
@@ -446,13 +473,17 @@ footer{
     }
 }
 @media only screen and (max-width:991px) and (min-width:321px){
-    .copyright .nav{
-        background-color: rgb(30, 30, 30);
-        color:white;
+    footer .navbar-nav{
         font-size: 12px;
+        opacity: .85;
+        color:white;
+        z-index: 1;
         width: 100%;
     }
-    .navbar-expand-lg .navbar-nav{
+    footer .navbar-nav .nav-item{
+        padding: 0 5px;
+    }
+    footer .navbar-expand-sm .navbar-nav{
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
