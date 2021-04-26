@@ -1,6 +1,7 @@
 var mybutton = document.getElementById("btn-scroll");
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction()
+};
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     mybutton.style.animation = "fadeIn linear 7s;"
@@ -11,7 +12,24 @@ function scrollFunction() {
     
   }
 }
+// ==== SCROLL HEADER STYLE ====
+// var header = document.getElementById("myHeader");
 
-function navFixed(){
-    document.getElementById();
-}
+// window.onscroll = function(){
+//   navFixed()
+// };
+// function navFixed(){
+//   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+//     header.style.position = "fixed";
+//     header.style.height = "75px"; 
+//     header.style.padding = "10px";
+//     header.style.background = "#010812";
+//     header.style.zIndex = "1";
+//     header.style.transition = "all .5s ease 0s";
+//   } 
+//   else{
+//     header.style.position = "absolute";
+//     header.style.background = "none";
+//     header.style.padding = "30px 10px";
+//   }
+// }

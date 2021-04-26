@@ -35,9 +35,9 @@ header{
     position: absolute;
     right: 0;
 }
-.nav-item{
+/* .nav-item{
     margin-left: 20px;
-}
+} */
 .nav-link{
     color:#A2B4C3;
     transition: all 0.3s ease 0s;
@@ -50,14 +50,13 @@ header{
 @media only screen and (max-width:320px){
     .header{
         width: 100%;
-        /* border: 1px solid red; */
     }
     .header-title{
         font-weight: bolder;
         letter-spacing: 3px;
         font-size: 12px;
      }
-     .navbar-nav{
+     header .navbar-nav{
          font-size: 12px;
          width: 100%;
          text-align: center;
@@ -66,10 +65,43 @@ header{
          color:white;
          z-index: 1;
      }
+     header .navbar-nav .nav-item{
+         width: 100%;
+     }
+     
      .collapse, .navbar-collapse{
          width: 100%;
          position: relative;
      }
+}
+@media only screen and (max-width:991px) and (min-width:321px){
+    .navbar-nav{
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        background-color: #010812;
+        opacity: .85;
+        color:white;
+        z-index: 1;
+    }
+    header .navbar-nav{
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        background-color: #010812;
+        opacity: .85;
+        color:white;
+        z-index: 1;
+        /* border:1px solid red; */
+    }
+    header .navbar-nav .nav-item{
+        /* border: 1px solid white; */
+        width: 100%;
+    }
+    .collapse, .navbar-collapse{
+        width: 100%;
+        position: relative;
+    }
 }
 
 /* ----- Style for HOME Page */
@@ -95,7 +127,7 @@ header{
     top: 250px;
     width: 100%;
 }
-/* HOME --- MEDIA QUERY at 320px */
+/* HOME --- MEDIA QUERY  */
 @media only screen and (max-width:320px){
     .home{
         height: 300px;
@@ -107,6 +139,11 @@ header{
        position: relative;
     }
 }
+@media only screen and (max-width:768px) and (min-width:321px){
+    .home{
+        height:575px;
+    }
+}
 
 /* ----- Styles for ABOUT Page */
 .about{
@@ -115,7 +152,7 @@ header{
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     line-height: 1.5em;
-    height: 700px;
+    height: 600px;
 }
 .about img{
     width: 400px;
@@ -154,6 +191,9 @@ a.download{
 }
 /* MEDIA QUERY at 360px */
 @media only screen and (max-width:320px){
+    .about{
+        height: auto;
+    }
     .about img{
         width: 200px;
         padding:0;
@@ -182,6 +222,70 @@ a.download{
         background-color: #dddddd;
     }
 }
+@media only screen and (max-width:768px) and (min-width:321px){
+    .about{
+        height: auto;
+    }
+    .about img{
+        width: 250px;
+        padding:0;
+    }
+    .column{
+        width: 100%;
+        margin: 30px auto;
+        /* margin-bottom: 0; */
+    }
+    .column h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .column p{
+        font-size: 12px;
+    }
+    a.download{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 10px 30px;
+        border-style: none;
+        transition: .3s ease 0s;
+    }
+    .download:hover{
+        color: black;
+        background-color: #dddddd;
+    }
+}
+@media only screen and (max-width:1024px) and (min-width:769px){
+    .about{
+        height: auto;
+    }
+    .about img{
+        width: 300px;
+        padding:0;
+        margin:25px;
+    }
+    .column{
+        width: 100%;
+        margin: 30px auto;
+        /* margin-bottom: 0; */
+    }
+    .column h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .column p{
+        font-size: 16px;
+    }
+    a.download{
+        font-size: 20px;
+    }
+    .line{
+        margin: 20px auto;
+        border-bottom: 3px solid rgb(134, 134, 134);
+        width: 200px;
+        display: block;
+    }
+}
 
 
 
@@ -201,10 +305,10 @@ a.download{
     letter-spacing: .2em;
 }
 .carousel-inner{
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 .carousel-item{
-    height: 350px;
+    height: 250px;
 }
 .carousel-caption{
     color: black;
@@ -274,11 +378,9 @@ a.email{
 /* CONTACT --- MEDIA QUERY at 320px */
 @media only screen and (max-width:320px){
     .col-sm{
-        /* border: 1px solid red; */
         padding: 0;
     }
     .first-column, .sec-column{
-        /* border: 1px solid white; */
         margin:0;
         padding: 0;
     } 
@@ -310,7 +412,6 @@ footer{
     color: #e6e6e6;
     width: 100%;
     padding-top: 10px;
-    /* border: 1px solid white; */
 }
 .copyright .nav{
     justify-content: center;
@@ -321,20 +422,42 @@ footer{
 
 /* FOOTER --- MEDIA QUERY at 320px */
 @media only screen and (max-width:320px){
+    
+    footer .navbar-nav{
+        font-size: 12px;
+        opacity: .85;
+        color:white;
+        z-index: 1;
+        width: 100%;
+    }
+    footer .navbar-nav .nav-item{
+        padding: 0 5px;
+    }
+    footer .navbar-expand-sm .navbar-nav{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .collapse, .navbar-collapse{
+        width: 100%;
+        position: relative;
+        outline: none;
+    }
+}
+@media only screen and (max-width:991px) and (min-width:321px){
     .copyright .nav{
         background-color: rgb(30, 30, 30);
         color:white;
         font-size: 12px;
         width: 100%;
-        /* border: 1px solid red; */
-        display: inline;
     }
-    /* .navbar-expand-lg .navbar-nav{
+    .navbar-expand-lg .navbar-nav{
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row;
-    } */
+    }
     .collapse, .navbar-collapse{
         width: 100%;
         position: relative;
@@ -345,16 +468,16 @@ footer{
 /* -------------- SCROLL BACK -------------- */
 .btn-scroll{
     display: none;
-   position: fixed;
-   right: 30px;
-   bottom: 20px;
-   background-color: #00001f;
-   color: white;
-   padding: 12px 20px;
-   border-radius: 50%;
-   z-index: 1;
-   text-decoration: none;
-   transition: all .5s ease 0s;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    background-color: #00001f;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50%;
+    z-index: 1;
+    text-decoration: none;
+    transition: all .5s ease 0s;
 }
 .btn-scroll:hover{
     background-color: RoyalBlue;
